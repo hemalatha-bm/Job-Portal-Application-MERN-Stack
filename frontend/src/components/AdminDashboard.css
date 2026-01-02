@@ -1,0 +1,332 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #5580b1, #6791be);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation on page load */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  overflow: hidden;
+  animation: slideIn 0.8s ease-out; /* Slide-in animation for the dashboard */
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header Navbar */
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between the title and logout button */
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(135deg,#6f98b6, #5892bb); /* Gradient background */
+  box-shadow: 0px 2px 6px rgba(113, 126, 181, 0.2);
+  border-radius: 0 0 10px 10px; /* Modern rounded bottom corners */
+  animation: navbarSlideIn 0.8s ease-out; /* Navbar slide-in animation */
+  position: relative;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and box-shadow */
+}
+
+/* Navbar Slide-in Animation */
+@keyframes navbarSlideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Hover Effect for Navbar */
+.header:hover {
+  background: linear-gradient(135deg,#6889a0, #4390c6); /* Slightly darker gradient for hover */
+  box-shadow: 0px 4px 10px rgba(126, 174, 208, 0.3); /* Elevated shadow on hover */
+}
+
+/* Admin Dashboard Title */
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  flex: 1;
+  text-align: center;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transition for text color */
+}
+
+.header h1:hover {
+  color: rgb(255, 255, 255); /* Keep white on hover */
+  transform: scale(1.05); /* Scale the title slightly on hover */
+}
+
+/* Logout Button (Right-aligned) */
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 12px 30px; /* Rectangular shape */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px; /* Rectangular button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05); /* Slight scale on hover */
+  box-shadow: 0px 3px 8px rgba(200, 35, 51, 0.5); /* Add shadow on hover */
+}
+
+/* Admin Dashboard Button (Centered) */
+.admin-dashboard-button {
+  background-color: #7897c0;
+  color: white;
+  padding: 12px 30px; /* Rectangular button with larger padding */
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Rectangular with slightly rounded corners */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+.admin-dashboard-button:hover {
+  background-color: #185abc;
+  transform: scale(1.05);
+  box-shadow: 0 3px 8px rgba(108, 141, 185, 0.3); /* Blue glow shadow */
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 30px; /* Increased gap for better spacing */
+  background-color: #f1f1f1;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  border-radius: 30px; /* Stylish shape */
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; /* Centered horizontally */
+}
+
+/* Search Input - Reduced Length, Increased Width */
+.search-input {
+  flex: 1;
+  padding: 12px 20px; /* Reduced length, increased width */
+  font-size: 16px; /* Increased font size */
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Rounded corners */
+  transition: box-shadow 0.3s ease, transform 0.3s ease, outline 0.3s ease;
+}
+
+.search-input:focus {
+  outline: 2px solid #7facca; /* Blue outline on focus */
+  box-shadow: 0 0 15px #7ea9c7; /* Blue glow */
+  transform: scale(1.03); /* Slight scale on focus */
+  border-color: #7eacca;
+}
+
+
+
+/* For small screen sizes, center-align the total job count */
+
+/* Buttons in the Search Section */
+.job-count,
+.add-job-button,
+.view-applied-button {
+  color: white;
+  padding: 12px 30px; /* Rectangular buttons */
+  font-size: 16px; 
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Rectangular button */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.job-count {
+  background-color: #2896a7;
+}
+.job-count:hover {
+  transform: scale(1.05);  /* Slightly enlarge on hover */
+  opacity: 0.9;  /* Make it a bit transparent when hovered */
+}
+
+.add-job-button {
+  background-color: #28a745;
+}
+
+.add-job-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.view-applied-button {
+  background-color: #e87228;
+}
+
+.view-applied-button:hover {
+  background-color: #ec6511;
+  transform: scale(1.05);
+}
+
+/* Job List */
+.job-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Job Title Container */
+.job-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  gap: 5px;
+}
+
+.job-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(83, 123, 197);
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-size: 16px;
+  color: #888;
+}
+
+/* Job Buttons */
+.job-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.edit-button,
+.delete-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.view-details-button {
+  background-color: #ffc107;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-details-button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+/* Message container styles */
+.message {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Success message style (Red background) */
+.message.success {
+  background-color: red; /* Red background for success message */
+  color: white;
+}
+
+/* Error message style */
+.message.error {
+  background-color: #dc3545;
+  color: white;
+}
+/* Enhanced styling for the Total Jobs counter */

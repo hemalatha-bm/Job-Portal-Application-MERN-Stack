@@ -1,0 +1,174 @@
+/* Applied Jobs Container */
+.applied-jobs-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+/* Heading Styling */
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+/* Table Borders */
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+/* Table Data and Header Styling */
+th, td {
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Header Styling */
+th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Row Styling */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Rows */
+tr:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+/* Hover Effect for Table Data */
+td:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+/* Hover Effect for Table Header */
+th:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Empty State Styling */
+p {
+  font-size: 1.5rem;
+  color: #888;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Error and Loading States */
+div {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Search Bar Container */
+.search-bar-container {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Styling for the search bar input */
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background-color: #ffffff;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+/* Focus effect */
+.search-bar:focus {
+  border-color: #3498db;
+  transform: scale(1.05);
+}
+
+/* Back Button Styling */
+.back-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px 0 0 0;
+}
+
+.back-button:hover {
+  background-color: #d43f00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 80%;
+  }
+
+  .search-bar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .back-button {
+    margin-left: 0;
+  }
+}
+/* Styling the email link */
+.email-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+

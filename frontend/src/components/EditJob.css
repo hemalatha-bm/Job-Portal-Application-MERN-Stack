@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Edit Job Container */
+.edit-job-container {
+  max-width: 1000px; /* Increased max-width for a wider layout */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+/* Header */
+h1 {
+  color: #3a7ca5;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+/* Form Group */
+form div {
+  display: flex;
+  justify-content: space-between; /* Adds space between label and input */
+  align-items: center; /* Vertically align label and input */
+  margin-bottom: 20px; /* Increased space between form fields */
+  animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+/* Labels */
+form label {
+  font-weight: bold;
+  margin-right: 20px; /* Space between label and input */
+  color: #3a7ca5;
+  width: 30%; /* Adjust label width */
+}
+
+/* Input, Textarea, Select */
+input,
+textarea,
+select {
+  width: 65%; /* Adjust width for input fields */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition for inputs */
+}
+
+/* Textarea specific height */
+form textarea {
+  height: 150px; /* Increased height for better text input */
+  resize: vertical; /* Allows resizing vertically */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border on focus */
+  transform: scale(1.05); /* Slight zoom effect on focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add soft glow on focus */
+}
+
+/* Buttons Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add space between buttons */
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background-color: #dc3545; /* Red background */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333; /* Darker red */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Update Button */
+.update-btn {
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-btn:hover {
+  background-color: #218838; /* Darker green */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .edit-job-container {
+    max-width: 95%; /* Make the form container full width on small screens */
+    padding: 20px; /* Adjust padding */
+  }
+
+  form label {
+    font-size: 14px; /* Adjust label font size */
+  }
+
+  form input,
+  form textarea,
+  form select {
+    font-size: 14px; /* Adjust font size for inputs */
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Add spacing between stacked buttons */
+  }
+
+  .cancel-btn,
+  .update-btn {
+    width: 100%; /* Make buttons full width on smaller screens */
+    padding: 12px 20px; /* Adjust padding */
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Success message styling */
+.alert.success {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: #d4edda; /* Light green background */
+  border: 1px solid #c3e6cb; /* Green border */
+  color: #155724; /* Dark green text */
+  text-align: center;
+  box-sizing: border-box;
+}
+

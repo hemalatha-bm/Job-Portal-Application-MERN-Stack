@@ -1,0 +1,39 @@
+/* Styling for AboutUs Page */
+
+  
+  /* Content Styling */
+  .about-us-content {
+    max-width: 800px; /* Maximum width of content */
+    padding: 40px;
+    background-color: #fff; /* White background for the content box */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow around the content */
+    text-align: center; /* Centered text */
+  }
+  
+  .about-us h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text for the title */
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+    color: #423535; /* Slightly lighter color for the paragraphs */
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+  }
+  /* Styling for quotes */
+.quote {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #333;
+    font-style: italic;
+    text-align: center;
+  }
+  

@@ -1,0 +1,151 @@
+/* Ensure the entire page background changes */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #708fcc, #5f93ca); /* Soft gradient */
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main container for the home page */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px; /* Add space below the navbar */
+  min-height: 100vh; /* Ensure it takes up the full height of the viewport */
+  text-align: center;
+}
+
+/* Content inside the home page */
+.home-content {
+  width: 90%; /* Increased width to 90% */
+  max-width: 800px; /* Increased maximum width */
+  background-color: white; /* White background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+  padding: 50px 30px; /* Increased vertical padding */
+  margin: auto; /* Center-align the box */
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-content:hover {
+  transform: translateY(-10px); /* Smooth upward effect on hover */
+}
+
+/* Title styling */
+.home-content h1 {
+  font-size: 3rem; /* Increased font size */
+  font-weight: bold;
+  color: #2c3e50; /* Aesthetic dark color */
+  margin-bottom: 20px; /* Added spacing below title */
+  letter-spacing: 1px;
+}
+
+/* Subtitle styling */
+.home-content p {
+  font-size: 1.4rem; /* Larger subtitle text */
+  color: #5d6d7e; /* Subtle gray-blue color */
+  margin-bottom: 30px; /* Added spacing below subtitle */
+  letter-spacing: 0.5px;
+}
+
+/* Search bar container */
+.home-search {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Input styling */
+.home-search input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 250px;
+  transition: all 0.3s ease;
+}
+
+.home-search input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.home-search button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-search button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scale up effect on hover */
+}
+.login-message {
+  color: #e74c3c; /* Red color for the message */
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Add a subtle fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Style for the Sign Up button */
+.login-message button {
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for the button */
+.login-message button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Focus effect for accessibility */
+.login-message button:focus {
+  outline: 2px solid #0056b3; /* Outline on focus */
+}
+
+/* Add an animation when the button appears */
+.login-message button {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Slight downward shift */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+}

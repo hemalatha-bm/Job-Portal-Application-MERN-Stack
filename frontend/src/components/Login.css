@@ -1,0 +1,122 @@
+/* Container for the login form */
+.login-container {
+  width: 100%;
+  height: 50%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Login heading */
+.login-container h2 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 25px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Input fields */
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.login-container input:focus {
+  border: 1px solid #2980b9;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+/* Submit button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2980b9;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.login-container button:hover {
+  background-color: #3498db;
+  transform: translateY(-2px);
+}
+
+.login-container button:active {
+  background-color: #1b6698;
+  transform: translateY(1px);
+}
+
+/* Message display */
+.login-container p {
+  text-align: center;
+  color: #1aa00e;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+/* Error message style */
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .login-container {
+    padding: 20px;
+    margin: 50px auto;
+  }
+
+  .login-container h2 {
+    font-size: 22px;
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Create Account button */
+.create-account-btn {
+  background-color: #28a745; /* Green color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 5px; /* Reduced margin to decrease space between buttons */
+}
+
+.create-account-btn:hover {
+  background-color: #218838; /* Darker green */
+  transform: scale(1.05); /* Slight zoom effect */
+}

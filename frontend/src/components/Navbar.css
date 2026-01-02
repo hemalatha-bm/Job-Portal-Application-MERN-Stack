@@ -1,0 +1,182 @@
+/* Full-width Navbar */
+.navbar {
+  width: 100vw;
+  height: 100px; /* Increased navbar height */
+  background: linear-gradient(135deg, #a6c1e2, #98bbde); /* Gradient background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; /* Increased padding */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Larger shadow for more depth */
+  z-index: 1000;
+  border-radius: 50px; /* More rounded corners */
+  overflow: hidden;
+  animation: navbarSlideIn 0.6s ease-out; /* Slide-in animation */
+  transition: all 0.3s ease;
+}
+
+/* Navbar container content */
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+.navbar-logo h1 {
+  font-size: 32px; /* Increased font size for logo */
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo h1:hover {
+  color: #5886b3; /* Change logo color on hover */
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 30px; /* Increased spacing between links */
+  margin: 0;
+}
+
+/* Navbar link styling */
+.navbar-links li a {
+  text-decoration: none;
+  color: #589dbf;
+  font-size: 20px; /* Increased font size for better visibility */
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transform for zoom effect */
+  position: relative;
+  padding: 5px; /* Added padding to make the links more clickable */
+  cursor: pointer;
+}
+
+/* Underline effect for navbar links */
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2e619b; /* Underline color */
+  transition: width 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.navbar-links li a:hover {
+  color: #43799e;
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.navbar-links li a:hover::after {
+  width: 100%; /* Underline expands on hover */
+}
+
+/* Add a smooth slide-in animation for the navbar */
+@keyframes navbarSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+  .navbar-links {
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+}
+
+/* Home Page Section */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px; /* Increased padding to create more space between navbar and home */
+  min-height: 100vh; /* Ensures it takes up the full height of the viewport */
+}
+
+/* Content inside the home page */
+.home-content {
+  width: 90%; /* Increased width to 90% */
+  max-width: 800px; /* Increased maximum width */
+  background-color: white; /* White background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+  padding: 50px 30px; /* Increased vertical padding */
+  margin: auto; /* Center-align the box */
+  text-align: center;
+}
+
+/* Title styling */
+.home-content h1 {
+  font-size: 3rem; /* Increased font size */
+  font-weight: bold;
+  color: #2c3e50; /* Aesthetic dark color */
+  margin-bottom: 20px; /* Added spacing below title */
+}
+
+/* Subtitle styling */
+.home-content p {
+  font-size: 1.4rem; /* Larger subtitle text */
+  color: #5d6d7e; /* Subtle gray-blue color */
+  margin-bottom: 30px; /* Added spacing below subtitle */
+}
+
+/* Search bar container */
+.home-search {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Input styling */
+.home-search input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.home-search input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.home-search button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-search button:hover {
+  background-color: #0056b3;
+}
