@@ -31,7 +31,7 @@ Track job count and application status
 
 Contact applicants via authenticated communication
 
-🔐 Authentication & Security
+**Authentication & Security**
 
 Role-based access control (Admin / User)
 
@@ -43,7 +43,7 @@ Environment variables secured using .env
 
 Backend validation to ensure data integrity
 
-🧠 System Design & Implementation
+**System Design & Implementation**
 
 Frontend built using React.js with reusable components and responsive UI
 
@@ -55,7 +55,7 @@ Efficient querying and filtering using MongoDB operators
 
 Modular folder structure for scalability and maintainability
 
-🗂️ Project Structure
+**Project Structure**
 Job-Portal-Application-MERN-Stack
 │
 ├── backend
@@ -77,8 +77,8 @@ Job-Portal-Application-MERN-Stack
 ├── .gitignore
 └── README.md
 
-🛠️ Technology Stack
-Frontend
+**Technology Stack**
+**Frontend**
 
 React.js
 
@@ -88,23 +88,23 @@ HTML5
 
 CSS3
 
-Backend
+**Backend**
 
 Node.js
 
 Express.js
 
-Database
+**Database**
 
 MongoDB
 
-Authentication
+**Authentication**
 
 JWT (JSON Web Tokens)
 
 Cookies
 
-Architecture
+**Architecture**
 
 MERN Stack
 
@@ -112,7 +112,7 @@ RESTful APIs
 
 Role-Based Access Control (RBAC)
 
-⚙️ Installation & Setup
+**Installation & Setup**
 Prerequisites
 
 Node.js
@@ -145,7 +145,7 @@ npm start
 cd ../frontend
 npm start
 
-📈 Impact & Learning Outcomes
+**Impact & Learning Outcomes**
 
 Hands-on experience with full-stack MERN development
 
@@ -157,7 +157,7 @@ Experience in real-world database modeling
 
 Improved skills in role-based system design
 
-📌 Future Enhancements
+**Future Enhancements**
 
 Resume upload and download feature
 
@@ -169,9 +169,5 @@ Email notifications
 
 Deployment with Docker and CI/CD
 
-👩‍💻 Author
 
-Hemalatha B M
-Full Stack Developer | MERN Stack Enthusiast
-
-⭐ If you like this project, feel free to star the repository!
+**If you like this project, feel free to star the repository!**
