@@ -55,27 +55,6 @@ Efficient querying and filtering using MongoDB operators
 
 Modular folder structure for scalability and maintainability
 
-**Project Structure**
-Job-Portal-Application-MERN-Stack
-│
-├── backend
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── config
-│   ├── server.js
-│   └── package.json
-│
-├── frontend
-│   ├── public
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   └── App.js
-│   └── package.json
-│
-├── .gitignore
-└── README.md
 
 **Technology Stack**
 **Frontend**
